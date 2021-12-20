@@ -7,7 +7,9 @@ export default function ProjectCard(props) {
             <div className="flex items-center justify-center">
                 <img 
                 className="min-w-sm max-w-sm rounded"
-                src={props.img}/>
+                src={props.img}
+                alt=""
+                />
             </div>
             <div className="grid grid-rows-4 p-4">
                 <div>
