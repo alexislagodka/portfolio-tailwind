@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../../assets/images/me.jpg';
+import me from '../../assets/images/me.jpg';
 import linkedInLogo from '../../assets/images/LinkedIn-Logos/LI-In-Bug.png';
 
 export default function PresentationCard() {
@@ -8,8 +8,8 @@ export default function PresentationCard() {
             <div className="md:flex">
                 <div className="flex justify-center items-center">
                     <img className="min-w-sm max-w-sm rounded"
-                    src={photo} 
-                    alt="photo"/>
+                    src={me} 
+                    alt="Pictures of me"/>
                 </div>
                 <div className="grid p-4">
                     <div className="grid grid-cols-2">

@@ -3,6 +3,7 @@ import PresentationCard from '../../components/PresentationCard/PresentationCard
 import CompetencesCard from '../../components/CompetencesCard/CompetencesCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import weatherAppImg from '../../assets/images/weather-app.png';
+
 export default class Site extends Component {
     render() {
         return (
@@ -21,7 +22,7 @@ export default class Site extends Component {
                     Application météo basé sur l'API metaweather.
                 </p>
                 </ProjectCard>
-                
+
             </div>
         )
     }
