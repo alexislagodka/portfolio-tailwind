@@ -3,7 +3,7 @@ import BasicButton from '../Buttons/BasicButton/BasicButton';
 
 export default function ProjectCard(props) {
     return (
-        <div className="card md:flex">
+        <div className="card md:flex w-full h-full">
             <img 
             className="md:w-1/3 rounded object-fit"
             src={props.img}
