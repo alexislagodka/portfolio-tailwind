@@ -9,7 +9,7 @@ export default function ProjectCard(props) {
             src={props.img}
             alt=""
             />
-            <div className="grid grid-rows-[30px_50px_1fr_50px] md:pl-4">
+            <div className="flex-1 grid grid-rows-[auto_50px_1fr_50px] md:pl-4">
                 <div>
                     {props.tags.map(tag => `${tag} ` )}
                 </div>
@@ -17,7 +17,7 @@ export default function ProjectCard(props) {
                 <div className="mt-2 mb-2">
                     {props.children}
                 </div>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4 md:max-w-sm">
                     <BasicButton 
                     handleClick={() => window.open(props.demoUrl)} 
                     color="blue"
