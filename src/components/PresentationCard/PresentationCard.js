@@ -6,11 +6,9 @@ export default function PresentationCard() {
     return (
         <div className="card">
             <div className="md:flex">
-                <div className="flex justify-center items-center">
-                    <img className="min-w-sm max-w-sm rounded"
-                    src={me} 
-                    alt="Pictures of me"/>
-                </div>
+                <img className="flex-auto md:w-1/3 rounded object-cover" 
+                src={me} 
+                alt="Pictures of me"/>
                 <div className="grid p-4">
                     <div className="grid grid-cols-2">
                         <div className="p-2">

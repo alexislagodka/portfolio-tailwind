@@ -2,7 +2,7 @@ import Site from './containers/Site/Site';
 
 function App() {
   return (
-    <div className="w-full h-full">
+    <div className="w-screen h-full">
       <Site />
     </div>
   );

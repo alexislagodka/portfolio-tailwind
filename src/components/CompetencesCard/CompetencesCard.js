@@ -4,7 +4,7 @@ export default function CompetencesCard() {
     return (
         <div className="card">
             <h1>FRONT-END</h1>
-            <div className="md:grid-cols-2">
+            <div className="grid md:grid-cols-2">
                 <div className="p-2">
                     <div className="mb-1 text-base font-medium text-blue-700">React</div>
                     <div className="w-full bg-gray-200 rounded-full h-2.5">
