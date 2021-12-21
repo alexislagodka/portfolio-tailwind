@@ -1,6 +1,6 @@
 import React from 'react';
 import me from '../../assets/images/me.jpg';
-import linkedInLogo from '../../assets/images/LinkedIn-Logos/LI-In-Bug.png';
+import linkedInLogo from '../../assets/images/LI-In-Bug.png';
 
 export default function PresentationCard() {
     return (
