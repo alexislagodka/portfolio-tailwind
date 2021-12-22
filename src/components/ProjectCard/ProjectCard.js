@@ -9,7 +9,7 @@ export default function ProjectCard(props) {
             src={props.img}
             alt=""
             />
-            <div className="flex-1 grid grid-rows-[auto_30px_100px_50px] md:pl-4">
+            <div className="flex-1 grid grid-rows-[auto_50px_1fr_50px] md:pl-4">
                 <div>
                     {props.tags.map(tag => `${tag} ` )}
                 </div>

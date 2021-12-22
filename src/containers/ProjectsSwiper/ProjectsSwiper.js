@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import weatherAppImg from '../../assets/images/weather-app.png';
 import windbnbImg from '../../assets/images/windbnb.png';
+import portfolioImg from '../../assets/images/portfolio.png';
+import countryquizImg from '../../assets/images/country-quiz.png';
 
 SwiperCore.use([Pagination]);
 
@@ -42,6 +44,32 @@ export default class ProjectsSwiper extends Component {
                 >
                 <p>
                     Une petite version de airbnb.
+                </p>
+                </ProjectCard>
+            </SwiperSlide>
+            <SwiperSlide>
+                <ProjectCard 
+                title="Portfolio"
+                img={portfolioImg} 
+                demoUrl="https://portfolio-alexis-lagodka.netlify.app/" 
+                gitUrl="https://github.com/alexislagodka/portfolioTailWind" 
+                tags={["#react", "#css", "#responsive","tailwindcss"]}
+                >
+                <p>
+                    Un profolio développé avec tailwindcss.
+                </p>
+                </ProjectCard>
+            </SwiperSlide>
+            <SwiperSlide>
+                <ProjectCard 
+                title="Country Quiz"
+                img={countryquizImg} 
+                demoUrl="https://country-quiz-app.netlify.app/" 
+                gitUrl="https://github.com/alexislagodka/country-quiz" 
+                tags={["#react", "#css", "#responsive", "api"]}
+                >
+                <p>
+                    Un quiz basé sur l'api restcountries.eu.
                 </p>
                 </ProjectCard>
             </SwiperSlide>
