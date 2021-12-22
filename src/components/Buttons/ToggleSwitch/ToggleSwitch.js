@@ -4,10 +4,6 @@ export default function ToggleSwitch(props) {
     const [toggle, setToggle] = useState(false);
     const toggleClass = " transform translate-x-5";
 
-    // React.useEffect(() => {
-    //     props.handleToggle(toggle)
-    // }, [toggle])
-
     React.useEffect(() => {
         props.handleToggle(toggle)
       });
