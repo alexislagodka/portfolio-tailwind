@@ -8,19 +8,20 @@
     @apply m-0;
     @apply p-0;
     @apply w-full;
-    @apply h-screen;
+    @apply h-full;
     @apply bg-gray-100;
+    @apply dark:bg-gray-900;
   }
 
   body {
-    margin: 0;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
     
-    color: #4F4F4F;
+    /* color: #4F4F4F; */
+    @apply text-zinc-700;
   }
   
   code {
@@ -34,7 +35,9 @@
     font-size: 24px;
     line-height: 29px;
     
-    color: #4F4F4F;
+    /* color: #4F4F4F; */
+    @apply text-zinc-700;
+    @apply dark:text-zinc-100;
   }
   h2{
     font-style: normal;
@@ -42,7 +45,19 @@
     font-size: 18px;
     line-height: 22px;
     
-    color: #828282;
+    /* color: #828282; */
+    @apply text-neutral-600;
+    @apply dark:text-neutral-300;
+  }
+  h3{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    
+    /* color: #828282; */
+    @apply text-neutral-500;
+    @apply dark:text-neutral-400;
   }
   p{
     font-style: normal;
@@ -50,7 +65,13 @@
     font-size: 16px;
     line-height: 22px;
 
-    color: #828282;
+    /* color: #828282; */
+    @apply text-neutral-600;
+    @apply dark:text-neutral-200;
+  }
+  li{
+    @apply text-neutral-600;
+    @apply dark:text-neutral-200;
   }
 }
 
@@ -58,6 +79,7 @@
 @layer components{
   .card{
    @apply bg-white;
+   @apply dark:bg-gray-700;
    @apply shadow-lg;
    @apply p-6;
    @apply border;

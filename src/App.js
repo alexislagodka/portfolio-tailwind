@@ -1,9 +1,12 @@
+import React, { useState } from 'react';
 import Site from './containers/Site/Site';
 
 function App() {
+  const [darkMode, setDarkMode] = useState("");
+
   return (
-    <div className="w-screen h-full flex justify-center">
-      <Site />
+    <div className={`${darkMode}`}>
+      <Site handleDarkMode={(active) => active ? setDarkMode("dark") : setDarkMode("")}/>
     </div>
   );
 }
