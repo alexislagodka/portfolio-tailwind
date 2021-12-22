@@ -22,7 +22,7 @@ export default function PresentationCard() {
                                 <img className="h-4"
                                 src={linkedInLogo} 
                                 alt="LinkedIn logo"/>
-                                <p>Mon linkedIn</p>
+                                Mon linkedIn
                             </a>
                         </div>  
                     </div>

@@ -8,11 +8,19 @@ import FormationCard from '../../components/FormationCard/FormationCard';
 
 export default class Site extends Component {
 
+    handleDarkMode = (active) => {
+        if (active) {
+            document.documentElement.classList.add('dark')
+          } else {
+            document.documentElement.classList.remove('dark')
+          }
+    }
+
     render() {
         return (
-            <div className="w-full h-full flex justify-center  dark:bg-gray-900">
+            <div className="w-full h-full flex justify-center dark:text-neutral-200">
                 <div className="w-full h-full max-w-screen-2xl p-6 grid gap-6">
-                    <ToggleSwitch handleToggle={(toggle) => this.props.handleDarkMode(toggle)}/>
+                    <ToggleSwitch handleToggle={(toggle) => this.handleDarkMode(toggle)}/>
                     <PresentationCard />
                     <CompetencesCard />
                     <ProjectsSwiper />
