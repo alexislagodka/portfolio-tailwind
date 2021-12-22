@@ -7,9 +7,6 @@ import ExperiencesCard from '../../components/ExperiencesCard/ExperiencesCard';
 import FormationCard from '../../components/FormationCard/FormationCard';
 
 export default class Site extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         return (
