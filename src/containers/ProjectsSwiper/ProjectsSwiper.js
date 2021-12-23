@@ -27,7 +27,7 @@ export default class ProjectsSwiper extends Component {
                 img={weatherAppImg} 
                 demoUrl="https://wthrapp.netlify.app/" 
                 gitUrl="https://github.com/alexislagodka/weatherapp" 
-                tags={["#react", "#css", "#responsive","#api"]}
+                tags={["react", "css", "responsive","api"]}
                 >
                 <p>
                     Une application météo basée sur l'API metaweather.
@@ -40,7 +40,7 @@ export default class ProjectsSwiper extends Component {
                 img={windbnbImg} 
                 demoUrl="https://wndbnbchllng.netlify.app/" 
                 gitUrl="https://github.com/alexislagodka/windbnbChallenge" 
-                tags={["#react", "#css", "#responsive"]}
+                tags={["react", "css", "responsive"]}
                 >
                 <p>
                     Une petite version de airbnb.
@@ -53,7 +53,7 @@ export default class ProjectsSwiper extends Component {
                 img={portfolioImg} 
                 demoUrl="https://portfolio-alexis-lagodka.netlify.app/" 
                 gitUrl="https://github.com/alexislagodka/portfolioTailWind" 
-                tags={["#react", "#css", "#responsive","tailwindcss"]}
+                tags={["react", "css", "responsive","tailwindcss"]}
                 >
                 <p>
                     Un profolio développé avec tailwindcss.
@@ -66,7 +66,7 @@ export default class ProjectsSwiper extends Component {
                 img={countryquizImg} 
                 demoUrl="https://country-quiz-app.netlify.app/" 
                 gitUrl="https://github.com/alexislagodka/country-quiz" 
-                tags={["#react", "#css", "#responsive", "api"]}
+                tags={["react", "css", "responsive", "api"]}
                 >
                 <p>
                     Un quiz basé sur l'api restcountries.eu.
