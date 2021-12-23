@@ -1,13 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {
-    Autoplay,Pagination,Navigation
+    Autoplay
   } from 'swiper';
 import 'swiper/css';
 import { FaReact } from 'react-icons/fa';
 import { SiNextdotjs, SiJavascript, SiTypescript, SiGatsby, SiRedux } from 'react-icons/si';
 
-SwiperCore.use([Autoplay,Pagination,Navigation]);
+SwiperCore.use([Autoplay]);
 
 export default function TechnoCard() {
     return (
