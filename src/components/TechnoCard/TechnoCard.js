@@ -22,7 +22,6 @@ export default function TechnoCard() {
             centeredSlides={true}
             slidesPerView={3}
             loop={true}
-            centeredSlides={true}
             autoplay={{
                 "delay": 3500,
                 "waitForTransition": false,
