@@ -5,7 +5,12 @@ import SwiperCore, {
   } from 'swiper';
 import 'swiper/css';
 import { FaReact } from 'react-icons/fa';
-import { SiNextdotjs, SiJavascript, SiTypescript, SiGatsby, SiRedux } from 'react-icons/si';
+import { 
+    SiNextdotjs,
+    SiJavascript,
+    SiTypescript,
+    SiGatsby,
+    SiRedux } from 'react-icons/si';
 
 SwiperCore.use([Autoplay]);
 
