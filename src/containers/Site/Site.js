@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import ToggleSwitch from '../../components/Buttons/ToggleSwitch/ToggleSwitch';
-import PresentationCard from '../../components/PresentationCard/PresentationCard';
-import CompetencesCard from '../../components/CompetencesCard/CompetencesCard';
-import TechnoCard from '../../components/TechnoCard/TechnoCard';
-import ProjectsSwiper from '../ProjectsSwiper/ProjectsSwiper';
-import ExperiencesCard from '../../components/ExperiencesCard/ExperiencesCard';
-import FormationCard from '../../components/FormationCard/FormationCard';
+import React, { Component } from 'react'
+import ToggleSwitch from '../../components/Buttons/ToggleSwitch/ToggleSwitch'
+import PresentationCard from '../../components/PresentationCard/PresentationCard'
+import CompetencesCard from '../../components/CompetencesCard/CompetencesCard'
+import TechnoCard from '../../components/TechnoCard/TechnoCard'
+import ProjectsSwiper from '../ProjectsSwiper/ProjectsSwiper'
+import ExperiencesCard from '../../components/ExperiencesCard/ExperiencesCard'
+import FormationCard from '../../components/FormationCard/FormationCard'
 
 export default class Site extends Component {
 

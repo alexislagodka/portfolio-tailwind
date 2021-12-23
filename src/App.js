@@ -1,12 +1,11 @@
-import Site from './containers/Site/Site';
+import Site from './containers/Site/Site'
 
-function App() {
-
+function App () {
   return (
     <div>
       <Site />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
