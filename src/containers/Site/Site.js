@@ -6,6 +6,7 @@ import TechnoCard from '../../components/TechnoCard/TechnoCard'
 import ProjectsSwiper from '../ProjectsSwiper/ProjectsSwiper'
 import ExperiencesCard from '../../components/ExperiencesCard/ExperiencesCard'
 import FormationCard from '../../components/FormationCard/FormationCard'
+import Footer from '../../components/Footer/Footer'
 
 export default class Site extends Component {
 
@@ -28,6 +29,7 @@ export default class Site extends Component {
                     <ProjectsSwiper />
                     <ExperiencesCard />
                     <FormationCard />
+                    <Footer />
                 </div>
             </div>
         )
