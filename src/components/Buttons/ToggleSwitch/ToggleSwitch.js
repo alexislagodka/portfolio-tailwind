@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
 export default function ToggleSwitch (props) {
   const [toggle, setToggle] = useState(false)
@@ -23,4 +24,8 @@ export default function ToggleSwitch (props) {
       />
     </div>
   )
+}
+
+ToggleSwitch.propTypes = {
+  handleToggle: PropTypes.func
 }

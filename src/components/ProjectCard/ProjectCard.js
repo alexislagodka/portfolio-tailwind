@@ -1,5 +1,6 @@
 import React from 'react'
 import BasicButton from '../Buttons/BasicButton/BasicButton'
+import PropTypes from 'prop-types'
 
 export default function ProjectCard (props) {
   return (
@@ -26,4 +27,13 @@ export default function ProjectCard (props) {
       </div>
     </div>
   )
+}
+
+ProjectCard.propTypes = {
+  img: PropTypes.string,
+  tags: PropTypes.arrayOf(PropTypes.string),
+  title: PropTypes.string,
+  children: PropTypes.element,
+  demoUrl: PropTypes.string,
+  gitUrl: PropTypes.gitUrl
 }

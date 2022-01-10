@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function BasicButton (props) {
   let bgcolor
@@ -31,4 +32,10 @@ export default function BasicButton (props) {
       {props.children}
     </button>
   )
+}
+
+BasicButton.propTypes = {
+  color: PropTypes.string,
+  handleClick: PropTypes.func,
+  children: PropTypes.element
 }

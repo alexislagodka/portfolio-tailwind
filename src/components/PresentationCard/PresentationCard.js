@@ -29,14 +29,14 @@ export default function PresentationCard () {
           </div>
           <div className='p-2'>
             <p className='pb-4'>
-              Actuellement technicien dans une communauté d'agglomération, je
-              suis à la recherche de nouveaux défis qui me permettront d'assoir
-              mes compétences en développement web et d'évoluer dans ce domaine
-              que j'affectionne.
+              Actuellement technicien dans une communauté d&apos;agglomération, je
+              suis à la recherche de nouveaux défis qui me permettront d&apos;assoir
+              mes compétences en développement web et d&apos;évoluer dans ce domaine
+              que j&apos;affectionne.
             </p>
             <p>
               Rejoindre une équipe et travailler sur des projets stimulants sont
-              des ambitions que j'arbore et cela me permettrait de m'épanouir
+              des ambitions que j&apos;arbore et cela me permettrait de m&apos;épanouir
               professionnellement.
             </p>
           </div>

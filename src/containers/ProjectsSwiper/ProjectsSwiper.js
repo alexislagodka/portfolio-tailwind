@@ -29,7 +29,7 @@ export default class ProjectsSwiper extends Component {
             gitUrl='https://github.com/alexislagodka/weatherapp'
             tags={['react', 'css', 'responsive', 'api']}
           >
-            <p>Une application météo basée sur l'API metaweather.</p>
+            <p>Une application météo basée sur l&apos;api metaweather.</p>
           </ProjectCard>
         </SwiperSlide>
         <SwiperSlide>
@@ -62,7 +62,7 @@ export default class ProjectsSwiper extends Component {
             gitUrl='https://github.com/alexislagodka/country-quiz'
             tags={['react', 'css', 'responsive', 'api']}
           >
-            <p>Un quiz basé sur l'api restcountries.eu.</p>
+            <p>Un quiz basé sur l&apos;api restcountries.eu.</p>
           </ProjectCard>
         </SwiperSlide>
       </Swiper>

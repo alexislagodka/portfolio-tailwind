@@ -1,3 +1,4 @@
+import React from 'react'
 import Site from './containers/Site/Site'
 
 function App () {
