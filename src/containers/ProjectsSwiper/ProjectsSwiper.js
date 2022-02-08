@@ -30,7 +30,7 @@ export default class ProjectsSwiper extends Component {
             gitUrl='https://github.com/alexislagodka/my-unsplash'
             tags={['react', 'next', 'tailwindcss', 'firebase']}
           >
-            <p>Une application météo basée sur l&apos;api metaweather.</p>
+            <p>Une application de collection de photos basé sur nextjs.</p>
           </ProjectCard>
         </SwiperSlide>
         <SwiperSlide>
