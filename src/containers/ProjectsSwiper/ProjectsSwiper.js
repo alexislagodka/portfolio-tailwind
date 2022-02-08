@@ -17,7 +17,7 @@ export default class ProjectsSwiper extends Component {
   render () {
     return (
       <Swiper
-        className='w-full h-full'
+        className='absolute w-full h-full'
         spaceBetween={50}
         slidesPerView={1}
         pagination
