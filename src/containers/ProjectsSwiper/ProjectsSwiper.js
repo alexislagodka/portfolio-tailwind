@@ -9,6 +9,7 @@ import weatherAppImg from '../../assets/images/weather-app.png'
 import windbnbImg from '../../assets/images/windbnb.png'
 import portfolioImg from '../../assets/images/portfolio.png'
 import countryquizImg from '../../assets/images/country-quiz.png'
+import myunsplashImg from '../../assets/images/myunsplash.png'
 
 SwiperCore.use([Pagination])
 
@@ -21,6 +22,17 @@ export default class ProjectsSwiper extends Component {
         slidesPerView={1}
         pagination
       >
+        <SwiperSlide>
+          <ProjectCard
+            title='My-Unsplash'
+            img={myunsplashImg}
+            demoUrl='https://myunsplashdevchallenge.netlify.app/'
+            gitUrl='https://github.com/alexislagodka/my-unsplash'
+            tags={['react', 'next', 'tailwindcss', 'firebase']}
+          >
+            <p>Une application météo basée sur l&apos;api metaweather.</p>
+          </ProjectCard>
+        </SwiperSlide>
         <SwiperSlide>
           <ProjectCard
             title='Weather-App'
