@@ -19,9 +19,12 @@
     font-size: 16px;
     line-height: 22px;
     
-    @apply text-zinc-700;
-    @apply bg-gray-100;
-    @apply dark:bg-gray-900;
+    @apply
+    bg-gradient-to-r
+    bg-gray-100
+
+    dark:from-indigo-900
+    dark:to-blue-800
   }
   
   code {
@@ -70,12 +73,12 @@
 
 @layer components{
   .card{
-   @apply bg-white;
-   @apply dark:bg-gray-700;
-   @apply dark:border-gray-800;
-   @apply shadow-lg;
-   @apply p-6;
-   @apply border;
-   @apply rounded-xl;
+   @apply 
+   bg-white
+   dark:bg-gray-900
+   shadow-lg
+   p-6
+   border-none 
+   rounded-xl;
   }
 }
