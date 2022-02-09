@@ -7,8 +7,30 @@ import ProjectsSwiper from '../ProjectsSwiper/ProjectsSwiper'
 import ExperiencesCard from '../../components/ExperiencesCard/ExperiencesCard'
 import FormationCard from '../../components/FormationCard/FormationCard'
 import Footer from '../../components/Footer/Footer'
+import app from '../../firebase'
+import { getDatabase, get, ref, child } from 'firebase/database'
 
 export default class Site extends Component {
+  state = {
+    projects: null
+  }
+
+  componentDidMount () {
+    const db = getDatabase(app)
+    get(child(ref(db), 'projects'))
+      .then(snapshot => {
+        if (snapshot.exists()) {
+          const projects = snapshot.val()
+          this.setState({ projects })
+        } else {
+          console.log('no data available')
+        }
+      })
+      .catch(error => {
+        console.error(error)
+      })
+  }
+
     handleDarkMode = (active) => {
       if (active) {
         document.documentElement.classList.add('dark')
@@ -25,7 +47,7 @@ export default class Site extends Component {
             <PresentationCard />
             <CompetencesCard />
             <TechnoCard />
-            <ProjectsSwiper />
+            {this.state.projects && <ProjectsSwiper projects={this.state.projects} />}
             <ExperiencesCard />
             <FormationCard />
             <Footer />
