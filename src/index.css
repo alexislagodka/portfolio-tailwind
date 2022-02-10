@@ -5,11 +5,11 @@
 
 @layer base {
   html{
-    @apply m-0;
-    @apply p-0;
-    @apply w-full;
-    @apply h-full;
-
+    @apply 
+    m-0
+    p-0
+    w-full
+    h-full
   }
 
   body {
@@ -18,13 +18,17 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    
-    @apply
-    bg-gradient-to-r
-    bg-gray-100
 
-    dark:from-indigo-900
-    dark:to-blue-800
+    @apply
+    h-full
+    m-0
+
+    bg-gradient-to-b
+    bg-no-repeat
+    bg-fixed
+    bg-gray-100
+    dark:from-blue-800
+    dark:to-indigo-900
   }
   
   code {
