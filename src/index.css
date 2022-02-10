@@ -10,6 +10,7 @@
     p-0
     w-full
     h-full
+    
   }
 
   body {
@@ -26,7 +27,9 @@
     bg-gradient-to-b
     bg-no-repeat
     bg-fixed
+
     bg-gray-100
+
     dark:from-blue-800
     dark:to-indigo-900
   }

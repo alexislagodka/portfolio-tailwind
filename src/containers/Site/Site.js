@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ProgressBar from '../../components/ProgressBar/ProgressBar'
 import ToggleSwitch from '../../components/Buttons/ToggleSwitch/ToggleSwitch'
 import PresentationCard from '../../components/PresentationCard/PresentationCard'
 import CompetencesCard from '../../components/CompetencesCard/CompetencesCard'
@@ -41,18 +42,21 @@ export default class Site extends Component {
 
     render () {
       return (
-        <div className='w-full h-full flex justify-center dark:text-neutral-200'>
-          <div className='w-full h-full max-w-screen-2xl p-6 grid gap-6'>
-            <ToggleSwitch handleToggle={(toggle) => this.handleDarkMode(toggle)} />
-            <PresentationCard />
-            <CompetencesCard />
-            <TechnoCard />
-            {this.state.projects && <ProjectsSwiper projects={this.state.projects} />}
-            <ExperiencesCard />
-            <FormationCard />
-            <Footer />
+        <>
+          <ProgressBar />
+          <div className='w-full h-full flex justify-center dark:text-neutral-200'>
+            <div className='w-full h-full max-w-screen-2xl p-6 grid gap-6'>
+              <ToggleSwitch handleToggle={(toggle) => this.handleDarkMode(toggle)} />
+              <PresentationCard />
+              <CompetencesCard />
+              <TechnoCard />
+              {this.state.projects && <ProjectsSwiper projects={this.state.projects} />}
+              <ExperiencesCard />
+              <FormationCard />
+              <Footer />
+            </div>
           </div>
-        </div>
+        </>
       )
     }
 }
