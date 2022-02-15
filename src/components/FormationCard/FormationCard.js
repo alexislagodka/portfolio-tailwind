@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FormationCard () {
   return (
-    <div className='card'>
+    <div className='card w-full'>
       <h1>FORMATION</h1>
       <div className='p-2'>
         <h2>Institut des sciences technique de Valencienne 2016-2017</h2>

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CompetencesCard () {
   return (
-    <div className='card'>
+    <div className='card w-full'>
       <h1>FRONT-END</h1>
       <div className='grid md:grid-cols-2'>
         <div className='p-2'>

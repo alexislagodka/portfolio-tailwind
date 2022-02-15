@@ -11,35 +11,35 @@ SwiperCore.use([Pagination])
 
 export default class ProjectsSwiper extends Component {
   render () {
-    const { projects } = this.props
     return (
-      <Swiper
-        className='absolute w-full h-full'
-        spaceBetween={50}
-        slidesPerView={1}
-        pagination
-      >
-        {
-        Object.entries(projects).map(project => {
-          const key = project[0]
-          const data = project[1]
-          return (
-            <SwiperSlide key={key}>
-              <ProjectCard
-                title={data.title}
-                image={data.image}
-                demoUrl={data.demoUrl}
-                gitUrl={data.gitUrl}
-                tags={data.tags}
-                description={data.description}
-              >
-                <p>Une application de collection de photos basé sur nextjs.</p>
-              </ProjectCard>
-            </SwiperSlide>
-          )
-        })
-      }
-      </Swiper>
+      <div className='w-full max-full max-h-screen min-w-0 min-h-0'>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          pagination
+        >
+          {Object.entries(this.props.projects).map((project) => {
+            const key = project[0]
+            const data = project[1]
+            return (
+              <SwiperSlide key={key}>
+                <ProjectCard
+                  title={data.title}
+                  image={data.image}
+                  demoUrl={data.demoUrl}
+                  gitUrl={data.gitUrl}
+                  tags={data.tags}
+                  description={data.description}
+                >
+                  <p>
+                    Une application de collection de photos basé sur nextjs.
+                  </p>
+                </ProjectCard>
+              </SwiperSlide>
+            )
+          })}
+        </Swiper>
+      </div>
     )
   }
 }

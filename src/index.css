@@ -10,7 +10,6 @@
     p-0
     w-full
     h-full
-    
   }
 
   body {
@@ -101,6 +100,24 @@
    shadow-lg
    p-6
    border-none 
-   rounded-xl;
+   rounded-xl
+  }
+
+  .fadeInSection {
+    @apply
+    transition
+    ease-in-out
+    delay-200
+
+    opacity-0
+    w-full
+    translate-y-8
+  }
+  
+  .is-visible {
+    @apply
+    opacity-100
+    translate-y-0
+    duration-300
   }
 }

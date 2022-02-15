@@ -8,6 +8,7 @@ import ProjectsSwiper from '../ProjectsSwiper/ProjectsSwiper'
 import ExperiencesCard from '../../components/ExperiencesCard/ExperiencesCard'
 import FormationCard from '../../components/FormationCard/FormationCard'
 import Footer from '../../components/Footer/Footer'
+import FadeInSection from '../../components/Animation/FadeInSection/FadeInSection'
 import app from '../../firebase'
 import { getDatabase, get, ref, child } from 'firebase/database'
 import { BiMoon, BiSun } from 'react-icons/bi'
@@ -58,12 +59,24 @@ export default class Site extends Component {
                     : <BiSun size={20} className='ml-2' />
                 }
               </div>
-              <PresentationCard />
-              <CompetencesCard />
-              <TechnoCard />
+              <FadeInSection>
+                <PresentationCard />
+              </FadeInSection>
+              <FadeInSection>
+                <CompetencesCard />
+              </FadeInSection>
+              <FadeInSection>
+                <TechnoCard />
+              </FadeInSection>
+
               {this.state.projects && <ProjectsSwiper projects={this.state.projects} />}
-              <ExperiencesCard />
-              <FormationCard />
+
+              <FadeInSection>
+                <ExperiencesCard />
+              </FadeInSection>
+              <FadeInSection>
+                <FormationCard />
+              </FadeInSection>
               <Footer />
             </div>
           </div>
