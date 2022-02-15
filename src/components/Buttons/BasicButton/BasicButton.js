@@ -6,8 +6,8 @@ export default function BasicButton (props) {
   let textcolor
   switch (props.color) {
     case 'white':
-      bgcolor = 'bg-white'
-      textcolor = 'text-blue-600'
+      bgcolor = 'bg-white dark:bg-gray-800'
+      textcolor = 'text-blue-600 dark:text-white'
       break
     case 'blue':
       bgcolor = 'bg-blue-600'
