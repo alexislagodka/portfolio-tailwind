@@ -10,10 +10,12 @@ import FormationCard from '../../components/FormationCard/FormationCard'
 import Footer from '../../components/Footer/Footer'
 import app from '../../firebase'
 import { getDatabase, get, ref, child } from 'firebase/database'
+import { BiMoon, BiSun } from 'react-icons/bi'
 
 export default class Site extends Component {
   state = {
-    projects: null
+    projects: null,
+    darkMode: false
   }
 
   componentDidMount () {
@@ -34,8 +36,10 @@ export default class Site extends Component {
 
     handleDarkMode = (active) => {
       if (active) {
+        this.setState({ darkMode: true })
         document.documentElement.classList.add('dark')
       } else {
+        this.setState({ darkMode: false })
         document.documentElement.classList.remove('dark')
       }
     }
@@ -46,7 +50,14 @@ export default class Site extends Component {
           <ProgressBar />
           <div className='w-full h-full flex justify-center dark:text-neutral-200'>
             <div className='w-full h-full max-w-screen-2xl p-6 grid gap-6'>
-              <ToggleSwitch handleToggle={(toggle) => this.handleDarkMode(toggle)} />
+              <div className='flex items-center'>
+                <ToggleSwitch handleToggle={(toggle) => this.handleDarkMode(toggle)} />
+                {
+                  this.state.darkMode
+                    ? <BiMoon size={20} className='ml-2' />
+                    : <BiSun size={20} className='ml-2' />
+                }
+              </div>
               <PresentationCard />
               <CompetencesCard />
               <TechnoCard />
