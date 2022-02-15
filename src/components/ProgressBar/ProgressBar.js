@@ -19,7 +19,7 @@ export default function ProgressBar () {
   }, [])
 
   return (
-    <div className='z-10 fixed w-full bg-gray-200 h-2.5 dark:bg-gray-700'>
+    <div className='z-10 fixed w-full bg-gray-200 h-2.5 dark:bg-gray-700 dark:bg-opacity-30 bg-opacity-30 backdrop-filter backdrop-blur-lg'>
       <div className='fixed bg-blue-600 h-2.5' style={{ width: `${pourcent}%` }} />
     </div>
   )
