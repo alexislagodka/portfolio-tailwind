@@ -12,8 +12,9 @@ SwiperCore.use([Pagination])
 export default class ProjectsSwiper extends Component {
   render () {
     return (
-      <div className='w-full max-full max-h-screen min-w-0 min-h-0'>
+      <div className='grid'>
         <Swiper
+          className='w-full h-full flex justify-center'
           spaceBetween={50}
           slidesPerView={1}
           pagination
@@ -30,11 +31,7 @@ export default class ProjectsSwiper extends Component {
                   gitUrl={data.gitUrl}
                   tags={data.tags}
                   description={data.description}
-                >
-                  <p>
-                    Une application de collection de photos basé sur nextjs.
-                  </p>
-                </ProjectCard>
+                />
               </SwiperSlide>
             )
           })}

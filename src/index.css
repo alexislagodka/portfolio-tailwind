@@ -95,6 +95,7 @@
 @layer components{
   .card{
    @apply 
+   w-full
    bg-white
    dark:bg-gray-900
    shadow-lg
@@ -120,4 +121,5 @@
     translate-y-0
     duration-300
   }
+  
 }

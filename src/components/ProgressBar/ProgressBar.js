@@ -8,8 +8,6 @@ export default function ProgressBar () {
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
 
     const scrolled = (winScroll / height) * 100
-    console.log(winScroll)
-    console.log(height)
     setPourcent(scrolled)
   }
 
