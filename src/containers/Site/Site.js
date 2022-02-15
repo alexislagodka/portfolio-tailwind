@@ -68,9 +68,9 @@ export default class Site extends Component {
               <FadeInSection>
                 <TechnoCard />
               </FadeInSection>
-
-              {this.state.projects && <ProjectsSwiper projects={this.state.projects} />}
-
+              <FadeInSection>
+                {this.state.projects && <ProjectsSwiper projects={this.state.projects} />}
+              </FadeInSection>
               <FadeInSection>
                 <ExperiencesCard />
               </FadeInSection>
