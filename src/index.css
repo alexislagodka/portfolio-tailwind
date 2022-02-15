@@ -23,6 +23,7 @@
     w-full
     h-screen
     bg-gray-100
+    dark:bg-gray-900
     dark:bg-gradient-to-r
     from-blue-800
     via-emerald-500
