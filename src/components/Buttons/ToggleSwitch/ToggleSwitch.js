@@ -7,7 +7,7 @@ export default function ToggleSwitch (props) {
 
   React.useEffect(() => {
     props.handleToggle(toggle)
-  })
+  }, [toggle])
 
   return (
     <div

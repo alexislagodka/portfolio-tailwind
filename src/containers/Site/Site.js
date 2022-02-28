@@ -50,7 +50,7 @@ export default class Site extends Component {
         <>
           <ProgressBar />
           <div className='w-full h-full  flex justify-center dark:text-neutral-200'>
-            <div className='w-full h-full max-w-screen-2xl p-6 grid gap-6'>
+            <div className='w-full h-full max-w-screen-lg p-6 grid gap-6'>
               <div className='flex items-center'>
                 <ToggleSwitch handleToggle={(toggle) => this.handleDarkMode(toggle)} />
                 {

@@ -49,5 +49,5 @@ ProjectCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   demoUrl: PropTypes.string,
-  gitUrl: PropTypes.gitUrl
+  gitUrl: PropTypes.string
 }

@@ -29,7 +29,7 @@ const FadeInSection = ({
 }
 
 FadeInSection.propTypes = {
-  children: PropTypes.elementType
+  children: PropTypes.object
 }
 
 export default FadeInSection

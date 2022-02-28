@@ -37,5 +37,5 @@ export default function BasicButton (props) {
 BasicButton.propTypes = {
   color: PropTypes.string,
   handleClick: PropTypes.func,
-  children: PropTypes.element
+  children: PropTypes.string
 }
