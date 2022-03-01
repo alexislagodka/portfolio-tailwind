@@ -10,7 +10,7 @@
     p-0
     w-full
     h-full
-   
+    overflow-hidden
   }
   body {
     -webkit-overflow-scrolling: touch;
@@ -21,6 +21,7 @@
     line-height: 22px;
 
     @apply
+    overflow-auto
     w-full
     h-screen
     bg-fixed
