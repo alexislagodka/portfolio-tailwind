@@ -10,6 +10,7 @@
     p-0
     w-full
     h-full
+    overflow-auto
   }
 
   body {
@@ -18,9 +19,9 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    overflow: auto;
 
     @apply
+    overflow-auto
     w-full
     h-screen
     bg-fixed
