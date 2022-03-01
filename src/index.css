@@ -23,7 +23,7 @@
     @apply
     overflow-auto
     w-full
-    h-screen
+    h-full
     bg-fixed
     bg-gray-100
     bg-gradient-to-r
