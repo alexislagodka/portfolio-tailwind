@@ -4,17 +4,17 @@ export default function ProgressBar () {
   const [pourcent, setPourcent] = useState(0)
 
   const controlProgress = () => {
-    const winScroll = document.documentElement.scrollTop
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    const winScroll = document.body.scrollTop
+    const height = document.body.scrollHeight - document.body.clientHeight
 
     const scrolled = (winScroll / height) * 100
     setPourcent(scrolled)
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', controlProgress)
+    document.body.addEventListener('scroll', controlProgress)
     return () => {
-      window.removeEventListener('scroll', controlProgress)
+      document.body.removeEventListener('scroll', controlProgress)
     }
   }, [])
 
