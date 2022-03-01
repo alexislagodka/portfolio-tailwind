@@ -10,9 +10,8 @@
     p-0
     w-full
     h-full
-    overflow-auto
+   
   }
-
   body {
     -webkit-overflow-scrolling: touch;
     font-family: Montserrat;
@@ -22,7 +21,6 @@
     line-height: 22px;
 
     @apply
-    overflow-auto
     w-full
     h-screen
     bg-fixed
