@@ -12,6 +12,7 @@ import FadeInSection from '../../components/Animation/FadeInSection/FadeInSectio
 import app from '../../firebase'
 import { getDatabase, get, ref, child } from 'firebase/database'
 import { BiMoon, BiSun } from 'react-icons/bi'
+import StarrySky from '../../components/StarrySky/StarrySky'
 
 export default class Site extends Component {
   state = {
@@ -49,7 +50,8 @@ export default class Site extends Component {
       return (
         <>
           <ProgressBar />
-          <div className='w-full h-full  flex justify-center dark:text-neutral-200'>
+          <StarrySky />
+          <div className='z-10 w-full h-full  flex justify-center dark:text-neutral-200'>
             <div className='w-full h-full max-w-screen-lg p-6 grid gap-6'>
               <div className='flex items-center'>
                 <ToggleSwitch handleToggle={(toggle) => this.handleDarkMode(toggle)} />
