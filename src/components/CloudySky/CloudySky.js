@@ -1,16 +1,16 @@
 import React from 'react'
 import anime from 'animejs'
 
-export default class StarrySky extends React.Component {
+export default class CloudySky extends React.Component {
     state = {
       num: 60,
       vw: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
       vh: Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
     }
 
-    starryNight = () => {
+    cloudyDay = () => {
       anime({
-        targets: ['#sky .star'],
+        targets: ['#sky .bird'],
         opacity: [
           {
             duration: 700,
@@ -27,9 +27,9 @@ export default class StarrySky extends React.Component {
       })
     };
 
-    shootingStars = () => {
+    shootingClouds = () => {
       anime({
-        targets: ['#shootingstars .wish'],
+        targets: ['#shootingclouds .cloud'],
         easing: 'linear',
         loop: true,
         delay: (el, i) => 1000 * i,
@@ -52,7 +52,8 @@ export default class StarrySky extends React.Component {
     };
 
     randomRadius = () => {
-      return Math.random() * 0.7 + 0.6
+    //   return Math.random() * 0.7 + 0.6
+      return Math.random() * 0.7 + 2
     };
 
     getRandomX = () => {
@@ -64,14 +65,14 @@ export default class StarrySky extends React.Component {
     };
 
     componentDidMount () {
-      this.starryNight()
+      this.cloudyDay()
       this.shootingStars()
     }
 
     render () {
       const { num } = this.state
       return (
-        <div id='starrySky'>
+        <div id='cloudySky'>
           <svg id='sky'>
             {[...Array(num)].map((x, y) => (
               <circle
@@ -82,11 +83,11 @@ export default class StarrySky extends React.Component {
                 strokeWidth='0'
                 fill='white'
                 key={y}
-                className='star'
+                className='bird'
               />
             ))}
           </svg>
-          <div id='shootingstars'>
+          <div id='shootingclouds'>
             {[...Array(60)].map((x, y) => (
               <div
                 key={y}

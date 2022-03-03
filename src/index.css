@@ -26,10 +26,6 @@
     h-full
     bg-fixed
     bg-gray-100
-    bg-gradient-to-r
-    from-gray-100
-    via-sky-200
-    to-sky-100
 
     dark:bg-gray-900
     dark:bg-gradient-to-r
@@ -99,6 +95,28 @@
     @apply text-neutral-600;
     @apply dark:text-neutral-200;
   }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    @apply
+    z-50
+    fixed
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply
+    rounded
+    bg-gray-500
+    dark:bg-gray-900
+  }
 }
 
 
@@ -141,7 +159,6 @@
   #starrySky{
     @apply
     invisible
-
     dark:visible
   }
 
