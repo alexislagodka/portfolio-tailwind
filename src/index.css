@@ -5,7 +5,6 @@
 
 @layer base {
   html{
-    position: fixed;
     @apply 
     m-0
     p-0
@@ -13,16 +12,6 @@
     h-full
     overflow-hidden
   }
-  html.has-scroll-smooth 
-  {
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;  
-  }
-
   body {
     -webkit-overflow-scrolling: touch;
     font-family: Montserrat;
@@ -45,6 +34,7 @@
     dark:to-indigo-900
     
     background-animate
+
   }
   .background-animate {
     background-size: 400%;
