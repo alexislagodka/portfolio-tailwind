@@ -7,8 +7,8 @@ import {
   SiNextdotjs,
   SiJavascript,
   SiTypescript,
-  SiGatsby,
-  SiRedux
+  SiRedux,
+  SiFirebase
 } from 'react-icons/si'
 
 SwiperCore.use([Autoplay])
@@ -44,22 +44,22 @@ export default function TechnoCard () {
       >
         <SwiperSlide className='text-center'>
           <div className='flex justify-center'>
-            <FaReact size={100} className='hover:text-blue-300' />
+            <SiFirebase size={100} className='hover:text-yellow-500' />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='text-center'>
+          <div className='flex justify-center'>
+            <FaReact size={100} className='hover:text-cyan-300' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='flex justify-center'>
-            <SiNextdotjs size={100} className='hover:text-black' />
+            <SiNextdotjs size={100} className='text-black' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className='flex justify-center'>
-            <SiGatsby size={100} className='hover:text-purple-900' />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='flex justify-center'>
-            <SiJavascript size={100} className='hover:text-yellow-300' />
+            <SiJavascript size={100} className='hover:text-yellow-400' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
