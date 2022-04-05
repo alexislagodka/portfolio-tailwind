@@ -54,7 +54,7 @@ export default function TechnoCard () {
         </SwiperSlide>
         <SwiperSlide>
           <div className='flex justify-center'>
-            <SiNextdotjs size={100} className='text-black' />
+            <SiNextdotjs size={100} className='hover:text-black' />
           </div>
         </SwiperSlide>
         <SwiperSlide>
