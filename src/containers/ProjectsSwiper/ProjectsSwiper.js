@@ -18,6 +18,8 @@ export default class ProjectsSwiper extends Component {
           spaceBetween={50}
           slidesPerView={1}
           pagination
+          effect='fade'
+          speed={300}
         >
           {Object.entries(this.props.projects).map((project) => {
             const key = project[0]

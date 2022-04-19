@@ -19,7 +19,7 @@ export default function ProjectCard ({ title, image, demoUrl, gitUrl, tags, desc
 
   return (
     <div className='card md:flex w-full h-full md:pb-8'>
-      <img className='md:w-1/3 rounded object-fit' src={imageSrc} alt='' />
+      <img className='md:w-1/3 rounded object-cover' src={imageSrc} alt='' />
       <div className='flex-1 grid grid-rows-[auto_50px_1fr_50px] md:pl-4'>
         <div>{tags.map((tag) => `#${tag} `)}</div>
         <h1>{title}</h1>

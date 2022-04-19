@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 export default function ToggleSwitch (props) {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(props.default)
   const toggleClass = ' transform translate-x-5'
 
   React.useEffect(() => {
@@ -27,5 +27,6 @@ export default function ToggleSwitch (props) {
 }
 
 ToggleSwitch.propTypes = {
-  handleToggle: PropTypes.func
+  handleToggle: PropTypes.func,
+  default: PropTypes.bool
 }
