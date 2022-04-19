@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 @layer base {
+  ::-webkit-scrollbar {
+    display: none;
+  }
   html{
     @apply 
     m-0
@@ -96,27 +99,6 @@
     @apply dark:text-neutral-200;
   }
 
-  /* width */
-  ::-webkit-scrollbar {
-    width: 8px;
-    @apply
-    z-50
-    fixed
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    @apply
-    rounded
-    bg-gray-500
-    dark:bg-gray-900
-  }
 }
 
 
