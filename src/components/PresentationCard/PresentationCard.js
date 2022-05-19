@@ -37,7 +37,7 @@ export default function PresentationCard () {
               des ambitions que j&apos;arbore.
             </p>
             <p>
-              Mon travail est disponible <a href='#project'>ici</a> et sur mon <a href='www.google.com'>github</a>.
+              Mon travail est disponible <button className='link' href='#project' onClick={() => document.getElementById('project').scrollIntoView({ behavior: 'smooth', block: 'center' })}>ici</button> et sur mon <a href='www.google.com'>github</a>.
             </p>
           </div>
         </div>
