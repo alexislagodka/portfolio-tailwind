@@ -29,16 +29,15 @@ export default function PresentationCard () {
           </div>
           <div className='p-2'>
             <p className='pb-4'>
-              Actuellement technicien SI, je
-              suis à la recherche de nouveaux défis qui me permettront d&apos;assoir
-              mes compétences en développement web et d&apos;évoluer dans ce domaine.
+              Actuellement technicien SI, je suis à la recherche de nouveaux défis
+              afin d&apos;évoluer dans le domaine du développement web.
             </p>
             <p className='pb-4'>
               Rejoindre une équipe et travailler sur des projets stimulants sont
               des ambitions que j&apos;arbore.
             </p>
             <p>
-              Mon travail est disponible sur cette page et sur mon <a href='www.google.com'>github</a>.
+              Mon travail est disponible <a href='#project'>ici</a> et sur mon <a href='www.google.com'>github</a>.
             </p>
           </div>
         </div>
