@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ProgressBar from '../../components/ProgressBar/ProgressBar'
-import ToggleSwitch from '../../components/Buttons/ToggleSwitch/ToggleSwitch'
+import DarkModeToggle from '../../components/Buttons/DarkModeToggle/DarkModeToggle'
 import PresentationCard from '../../components/PresentationCard/PresentationCard'
 import CompetencesCard from '../../components/CompetencesCard/CompetencesCard'
 import TechnoCard from '../../components/TechnoCard/TechnoCard'
@@ -11,23 +11,14 @@ import Footer from '../../components/Footer/Footer'
 import FadeInSection from '../../components/Animation/FadeInSection/FadeInSection'
 import app from '../../firebase'
 import { getDatabase, get, ref, child } from 'firebase/database'
-import { BiMoon, BiSun } from 'react-icons/bi'
 import StarrySky from '../../components/StarrySky/StarrySky'
 
 export default class Site extends Component {
   state = {
-    projects: null,
-    darkMode: false
+    projects: null
   }
 
   componentDidMount () {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      console.log('dark')
-      this.handleDarkMode(true)
-    } else {
-      console.log('white')
-    }
-
     const db = getDatabase(app)
     get(child(ref(db), 'projects'))
       .then(snapshot => {
@@ -45,9 +36,11 @@ export default class Site extends Component {
 
     handleDarkMode = (active) => {
       if (active) {
+        console.log('active darkmode')
         this.setState({ darkMode: true })
         document.documentElement.classList.add('dark')
       } else {
+        console.log('disable darkmode')
         this.setState({ darkMode: false })
         document.documentElement.classList.remove('dark')
       }
@@ -61,12 +54,7 @@ export default class Site extends Component {
           <div className='z-10 w-full h-full  flex justify-center dark:text-neutral-200'>
             <div className='w-full h-full max-w-screen-lg p-6 grid gap-6'>
               <div className='flex items-center'>
-                <ToggleSwitch handleToggle={(toggle) => this.handleDarkMode(toggle)} default={this.state.darkMode} />
-                {
-                  this.state.darkMode
-                    ? <BiMoon size={20} className='ml-2' />
-                    : <BiSun size={20} className='ml-2' />
-                }
+                <DarkModeToggle />
               </div>
               <FadeInSection>
                 <PresentationCard />

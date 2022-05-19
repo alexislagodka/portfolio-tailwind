@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,13 +7,12 @@
   ::-webkit-scrollbar {
     display: none;
   }
-  html{
-    @apply 
-    m-0
+  html {
+    @apply m-0
     p-0
     w-full
     h-full
-    overflow-hidden
+    overflow-hidden;
   }
   body {
     -webkit-overflow-scrolling: touch;
@@ -23,8 +22,7 @@
     font-size: 16px;
     line-height: 22px;
 
-    @apply
-    overflow-auto
+    @apply overflow-auto
     w-full
     h-full
     bg-fixed
@@ -32,53 +30,37 @@
 
     dark:bg-gradient-to-r
     dark:from-blue-800
-    dark:to-indigo-900
-
+    dark:to-indigo-900;
   }
 
-  @keyframes AnimationName {
-    0%,
-    100% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-  }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
-
-  h1{
+  h1 {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    
+
     @apply text-zinc-700;
     @apply dark:text-zinc-100;
   }
-  h2{
+  h2 {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    
+
     @apply text-neutral-600;
     @apply dark:text-neutral-300;
   }
-  h3{
+  h3 {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-  
+
     @apply text-neutral-500;
     @apply dark:text-neutral-400;
   }
-  p{
+  p {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -88,13 +70,37 @@
     @apply dark:text-neutral-200;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a {
+    background: linear-gradient(
+        to right,
+        rgba(100, 200, 200, 1),
+        rgba(100, 200, 200, 1)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+      );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+
+  a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
 }
 
-
-@layer components{
-  .card{
-   @apply 
-   w-full
+@layer components {
+  .card {
+    @apply w-full
    bg-white
    bg-opacity-60 
    backdrop-filter
@@ -106,31 +112,28 @@
    shadow-lg
    p-6
    border-none 
-   rounded-xl
+   rounded-xl;
   }
 
   .fadeInSection {
-    @apply
-    transition
+    @apply transition
     ease-in-out
     delay-300
 
     opacity-0
     w-full
-    translate-y-8
-  }
-  
-  .is-visible {
-    @apply
-    opacity-100
-    translate-y-0
-    duration-300
+    translate-y-8;
   }
 
-  #starrySky{
-    @apply
-    invisible
-    dark:visible
+  .is-visible {
+    @apply opacity-100
+    translate-y-0
+    duration-300;
+  }
+
+  #starrySky {
+    @apply invisible
+    dark:visible;
   }
 
   #sky {
@@ -142,7 +145,7 @@
     padding: 0;
     z-index: -10;
   }
-  
+
   #shootingstars {
     margin: 0;
     padding: 0;
@@ -154,7 +157,7 @@
     transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
       rotate(120deg);
   }
-  
+
   .wish {
     height: 2px;
     top: 300px;
@@ -168,5 +171,4 @@
     filter: drop-shadow(0 0 6px white);
     overflow: hidden;
   }
-  
 }

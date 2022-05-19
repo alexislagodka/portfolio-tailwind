@@ -6,7 +6,7 @@ export default function CompetencesCard () {
       <h1>FRONT-END</h1>
       <div className='grid md:grid-cols-2'>
         <div className='p-2'>
-          <div className='mb-1 text-base font-medium text-blue-700'>React</div>
+          <div className='mb-1 text-base font-medium text-blue-700 dark:text-neutral-200'>React js</div>
           <div className='w-full bg-gray-200 rounded-full h-2.5'>
             <div
               className='bg-blue-600 h-2.5 rounded-full'
@@ -15,7 +15,7 @@ export default function CompetencesCard () {
           </div>
         </div>
         <div className='p-2'>
-          <div className='mb-1 text-base font-medium text-blue-700'>
+          <div className='mb-1 text-base font-medium text-blue-700 dark:text-neutral-200'>
             Javascript
           </div>
           <div className='w-full bg-gray-200 rounded-full h-2.5'>
@@ -26,7 +26,7 @@ export default function CompetencesCard () {
           </div>
         </div>
         <div className='p-2'>
-          <div className='mb-1 text-base font-medium text-blue-700'>
+          <div className='mb-1 text-base font-medium text-blue-700 dark:text-neutral-200'>
             TypeScript
           </div>
           <div className='w-full bg-gray-200 rounded-full h-2.5'>
@@ -37,7 +37,7 @@ export default function CompetencesCard () {
           </div>
         </div>
         <div className='p-2'>
-          <div className='mb-1 text-base font-medium text-blue-700'>CSS</div>
+          <div className='mb-1 text-base font-medium text-blue-700 dark:text-neutral-200'>CSS</div>
           <div className='w-full bg-gray-200 rounded-full h-2.5'>
             <div
               className='bg-blue-600 h-2.5 rounded-full'
