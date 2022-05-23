@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 import ProgressBar from '../../components/ProgressBar/ProgressBar'
 import DarkModeToggle from '../../components/Buttons/DarkModeToggle/DarkModeToggle'
 import PresentationCard from '../../components/PresentationCard/PresentationCard'
-import CompetencesCard from '../../components/CompetencesCard/CompetencesCard'
-import TechnoCard from '../../components/TechnoCard/TechnoCard'
+import StackCard from '../../components/StackCard/StackCard'
 import ProjectsSwiper from '../ProjectsSwiper/ProjectsSwiper'
 import ExperiencesCard from '../../components/ExperiencesCard/ExperiencesCard'
 import FormationCard from '../../components/FormationCard/FormationCard'
@@ -60,12 +59,12 @@ export default class Site extends Component {
                 <PresentationCard />
               </FadeInSection>
               <FadeInSection>
-                <CompetencesCard />
+                <StackCard />
               </FadeInSection>
               <FadeInSection>
-                <TechnoCard />
-              </FadeInSection>
-              <FadeInSection>
+                {/* <div className='card mb-4'>
+                  <h1>Mes projets :</h1>
+                </div> */}
                 {this.state.projects && <ProjectsSwiper projects={this.state.projects} />}
               </FadeInSection>
               <FadeInSection>

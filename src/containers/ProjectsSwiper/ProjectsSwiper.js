@@ -12,32 +12,35 @@ SwiperCore.use([Pagination])
 export default class ProjectsSwiper extends Component {
   render () {
     return (
-      <div className='grid'>
-        <Swiper
-          className='w-full h-full flex justify-center'
-          spaceBetween={50}
-          slidesPerView={1}
-          pagination
-          effect='fade'
-          speed={300}
-        >
-          {Object.entries(this.props.projects).map((project) => {
-            const key = project[0]
-            const data = project[1]
-            return (
-              <SwiperSlide key={key}>
-                <ProjectCard
-                  title={data.title}
-                  image={data.image}
-                  demoUrl={data.demoUrl}
-                  gitUrl={data.gitUrl}
-                  tags={data.tags}
-                  description={data.description}
-                />
-              </SwiperSlide>
-            )
-          })}
-        </Swiper>
+      <div className='card'>
+        <h1>Mes projets : </h1>
+        <div className='grid mt-4'>
+          <Swiper
+            className='w-full h-full flex justify-center'
+            spaceBetween={50}
+            slidesPerView={1}
+            pagination
+            effect='fade'
+            speed={300}
+          >
+            {Object.entries(this.props.projects).map((project) => {
+              const key = project[0]
+              const data = project[1]
+              return (
+                <SwiperSlide key={key}>
+                  <ProjectCard
+                    title={data.title}
+                    image={data.image}
+                    demoUrl={data.demoUrl}
+                    gitUrl={data.gitUrl}
+                    tags={data.tags}
+                    description={data.description}
+                  />
+                </SwiperSlide>
+              )
+            })}
+          </Swiper>
+        </div>
       </div>
     )
   }

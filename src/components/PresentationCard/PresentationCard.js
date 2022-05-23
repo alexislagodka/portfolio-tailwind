@@ -15,7 +15,7 @@ export default function PresentationCard () {
           <div className='grid grid-cols-2'>
             <div className='p-2'>
               <h1>Alexis Lagodka</h1>
-              <h2 className=''>Développeur Front-End</h2>
+              <h2 className=''>Développeur Web Front-End</h2>
             </div>
             <div className='p-2 flex flex-col items-end'>
               <a
@@ -29,13 +29,13 @@ export default function PresentationCard () {
           </div>
           <div className='p-2'>
             <p className='pb-4'>
-              Vous trouverez sur cette page mon parcours de formation ainsi que mes différents projets.
+              Vous trouverez sur cette page mon parcours ainsi que mes différents projets.
             </p>
             <p className='pb-4'>
               Je travail actuellement sur react js.
             </p>
             <p>
-              Mes travaux sont disponibles <button className='link' href='#project' onClick={() => document.getElementById('project').scrollIntoView({ behavior: 'smooth', block: 'center' })}>ici</button> et sur mon <a href='www.google.com'>github</a>.
+              Mes travaux sont disponibles <button className='link' href='#project' onClick={() => document.getElementById('project').scrollIntoView({ behavior: 'smooth', block: 'center' })}>ici</button> et sur mon <a href='www.google.com' className='link'>github</a>.
             </p>
           </div>
         </div>

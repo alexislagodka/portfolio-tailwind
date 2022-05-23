@@ -70,12 +70,12 @@
     @apply dark:text-neutral-200;
   }
 
-  .link, a {
+  .link {
     color: inherit;
     text-decoration: none;
   }
 
-  .link, a {
+  .link {
     background: linear-gradient(
         to right,
         rgba(100, 200, 200, 1),
@@ -93,12 +93,13 @@
     transition: background-size 400ms;
   }
 
-  .link:hover, a:hover {
+  .link:hover {
     background-size: 0 3px, 100% 3px;
   }
 }
 
 @layer components {
+
   .card {
     @apply w-full
    bg-white
@@ -170,5 +171,13 @@
     background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
     filter: drop-shadow(0 0 6px white);
     overflow: hidden;
+  }
+
+  .anime-scale{
+    @apply
+    transform 
+    transition 
+    duration-300 
+    hover:scale-110;
   }
 }
