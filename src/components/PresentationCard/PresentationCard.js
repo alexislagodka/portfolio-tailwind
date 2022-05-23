@@ -29,15 +29,13 @@ export default function PresentationCard () {
           </div>
           <div className='p-2'>
             <p className='pb-4'>
-              Actuellement technicien SI, je suis à la recherche de nouveaux défis
-              afin d&apos;évoluer dans le domaine du développement web.
+              Vous trouverez sur cette page mon parcours de formation ainsi que mes différents projets.
             </p>
             <p className='pb-4'>
-              Rejoindre une équipe et travailler sur des projets stimulants sont
-              des ambitions que j&apos;arbore.
+              Je travail actuellement sur react js.
             </p>
             <p>
-              Mon travail est disponible <button className='link' href='#project' onClick={() => document.getElementById('project').scrollIntoView({ behavior: 'smooth', block: 'center' })}>ici</button> et sur mon <a href='www.google.com'>github</a>.
+              Mes travaux sont disponibles <button className='link' href='#project' onClick={() => document.getElementById('project').scrollIntoView({ behavior: 'smooth', block: 'center' })}>ici</button> et sur mon <a href='www.google.com'>github</a>.
             </p>
           </div>
         </div>

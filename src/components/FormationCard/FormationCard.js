@@ -26,7 +26,7 @@ export default function FormationCard () {
         <h3>BTS Systèmes Numérique</h3>
         <ul className='list-disc pl-8 pt-4'>
           <li>Télécommunications -Téléphonie</li>
-          <li>Informatique - RéseauxInformatiques</li>
+          <li>Informatique - Réseaux informatiques</li>
           <li>Multimédia - Télédiffusion</li>
           <li>Electronique médicale</li>
           <li>Electronique embarquée</li>
