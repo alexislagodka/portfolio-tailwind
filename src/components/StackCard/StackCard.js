@@ -45,7 +45,7 @@ export default function StackCard () {
           <div className='grid grid-cols-2 md:grid-cols-4 gap-8'>
             <a href='https://firebase.google.com/'><SiFirebase title='Firebase' size={100} className='text-yellow-500 anime-scale' /></a>
             <a href='https://vercel.com/'><SiVercel title='Vercel' size={100} className='text-black anime-scale' /></a>
-            <a href='https://www.netlify.com/'><SiNetlify title='Netlidy' size={100} className='text-emerald-400 anime-scale' /></a>
+            <a href='https://www.netlify.com/'><SiNetlify title='Netlify' size={100} className='text-emerald-400 anime-scale' /></a>
           </div>
         </div>
 
