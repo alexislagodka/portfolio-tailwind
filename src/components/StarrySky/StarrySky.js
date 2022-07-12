@@ -65,7 +65,7 @@ export default class StarrySky extends React.Component {
 
     componentDidMount () {
       this.starryNight()
-      this.shootingStars()
+      // this.shootingStars()
     }
 
     render () {
