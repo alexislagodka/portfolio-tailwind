@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import me from '../../assets/images/me.jpg'
 import linkedInLogo from '../../assets/images/LI-In-Bug.png'
 
 export default function PresentationCard () {
+  const [loaded, setloaded] = useState(false)
+
   return (
     <div className='card'>
       <div className='md:flex'>
+        {!loaded && <div className='w-full h-32 rounded animate-pulse bg-gray-500' />}
         <img
-          className='flex-auto md:w-1/3 rounded object-cover'
+          className={`flex-auto md:w-1/3 rounded object-cover ${!loaded && 'invisible'}`}
           src={me}
           alt='Pictures of me'
+          onLoad={() => setloaded(true)}
         />
         <div className='grid p-4'>
           <div className='grid grid-cols-2'>
