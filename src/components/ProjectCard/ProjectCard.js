@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import BasicButton from '../Buttons/BasicButton/BasicButton'
 import { getStorage, ref, getDownloadURL } from 'firebase/storage'
 import PropTypes from 'prop-types'
+import Image from '../Image/Image'
 
 export default function ProjectCard ({ title, image, demoUrl, gitUrl, tags, description }) {
   const [imageSrc, setImageSrc] = useState('')
@@ -19,7 +20,9 @@ export default function ProjectCard ({ title, image, demoUrl, gitUrl, tags, desc
 
   return (
     <div className='card md:flex w-full h-full md:pb-8' id='project'>
-      <img className='md:w-1/3 rounded object-cover' src={imageSrc} alt='' />
+      <div className='md:w-1/3'>
+        <Image src={imageSrc} alt='' />
+      </div>
       <div className='flex-1 grid grid-rows-[auto_50px_1fr_50px] md:pl-4'>
         <div>{tags.map((tag) => `#${tag} `)}</div>
         <h1>{title}</h1>
